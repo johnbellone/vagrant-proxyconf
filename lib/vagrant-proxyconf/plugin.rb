@@ -101,6 +101,11 @@ module VagrantPlugins
         Config::YumProxy
       end
 
+      config 'mvn_proxy' do
+        require_relative 'config/mvn_proxy'
+        Config::MvnProxy
+      end
+
       guest_capability 'debian', 'apt_proxy_conf' do
         require_relative 'cap/debian/apt_proxy_conf'
         Cap::Debian::AptProxyConf

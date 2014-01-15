@@ -31,6 +31,7 @@ module VagrantPlugins
             b2.use ConfigureChefProxy
             b2.use ConfigureEnvProxy
             b2.use ConfigureYumProxy
+            b2.use ConfigureMvnProxy
           end
         end
       end
